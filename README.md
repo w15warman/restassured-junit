@@ -14,10 +14,33 @@ This simple project was created to demonstrate how to use the most popular java 
 
 ### Project structure
 The Standart Maven Directory Structure is using on this project.
-The src directory is the root directory of source code and test code.
+Some directories was added for future usage.
 ```bash
-├── src
-
+.
+├── main
+│   ├── java
+│   │   ├── com
+│   │   │   └── si
+│   │   │       ├── helpers
+│   │   │       │   ├── actions
+│   │   │       │   └── validation
+│   │   │       └── web
+│   │   │           ├── api
+│   │   │           ├── model
+│   │   │           └── services
+│   │   └── framework
+│   │       ├── config
+│   │       └── utils
+│   └── resources
+│       └── env
+└── test
+    ├── java
+    │   └── com
+    │       └── si
+    │           └── web
+    │               └── services
+    └── resources
+        └── documents
 ```
 
 ## Running the tests
