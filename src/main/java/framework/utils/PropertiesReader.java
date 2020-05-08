@@ -6,17 +6,15 @@ import java.util.Properties;
 
 public class PropertiesReader {
 
-  public Properties loadPropertiesFile(String filePath) {
+  Properties prop = new Properties();
 
-    Properties prop = new Properties();
+  public Properties loadPropertiesFile(String filePath) {
 
     try (InputStream resourceAsStream = getClass().getClassLoader().getResourceAsStream(filePath)) {
       prop.load(resourceAsStream);
     } catch (IOException e) {
       System.err.println("Unable to load properties file : " + filePath);
     }
-
     return prop;
-
   }
 }
